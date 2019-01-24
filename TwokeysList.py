@@ -5,8 +5,6 @@ class TwoKeysList:
 	_dic2=dict()
 	_dic12=dict()
 	_dic21=dict()
-	
-	_typePair=type({1,1})
 		
 	def Add(self,key1,key2,value):
 		if key1 in self._dic1:

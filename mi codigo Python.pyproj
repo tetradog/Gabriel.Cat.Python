@@ -20,10 +20,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Console.py" />
+    <Compile Include="InternetSource\charRead.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="main.py" />
     <Compile Include="String.py" />
     <Compile Include="Tupla.py" />
     <Compile Include="TwokeysList.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="InternetSource\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>

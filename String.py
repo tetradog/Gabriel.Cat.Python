@@ -24,4 +24,5 @@ def Split(string,*strsSplit):
 		strSplit+=s+'|'
 	
 	return re.split(strSplit[:-1],string)
+
 	

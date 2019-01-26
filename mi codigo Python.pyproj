@@ -19,11 +19,13 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Atributo.py" />
     <Compile Include="Console.py" />
     <Compile Include="InternetSource\charRead.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="main.py" />
+    <Compile Include="Serializar.py" />
     <Compile Include="String.py" />
     <Compile Include="Tupla.py" />
     <Compile Include="TwokeysList.py" />

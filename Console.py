@@ -1,6 +1,7 @@
 import re
 import String
 import InternetSource.charRead
+import os
 
 def WriteLine(obj,*remplace):
 	Write(obj,remplace,end='\n')
@@ -12,3 +13,5 @@ def ReadLine(obj=''):
 def ReadKey():
     strRead=str(InternetSource.charRead._Getch()())
     return strRead[2:-1]
+def Clear():
+	os.system('cls' if os.name=='nt' else 'clear')

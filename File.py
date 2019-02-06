@@ -1,4 +1,4 @@
-import Tupla
+from MiCodigoPython import Tupla
 
 def WriteLines(pathFile,*lines):
 	lines=Tupla.Limpia(lines)

@@ -1,5 +1,5 @@
 import re
-import Tupla
+from MiCodigoPython import Tupla
 
 def Format(string,*args):
 	i=0

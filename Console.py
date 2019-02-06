@@ -1,6 +1,6 @@
 import re
-import String
-import InternetSource.charRead
+from MiCodigoPython import String
+from MiCodigoPython.InternetSource import charRead
 import os
 
 def WriteLine(obj,*remplace):
@@ -11,7 +11,7 @@ def Write(obj,*remplace,end=''):
 def ReadLine(obj=''):
 	return input(str(obj))
 def ReadKey():
-    strRead=str(InternetSource.charRead._Getch()())
+    strRead=str(charRead._Getch()())
     return strRead[2:-1]
 def Clear():
 	os.system('cls' if os.name=='nt' else 'clear')

@@ -6,7 +6,7 @@ def WriteLines(pathFile,*lines):
 		for line in lines:
 			file.write(str(line)+'\n')
 def ReadLines(pathFile):
-	lines={}
+	lines=[]
 	with open(pathFile,'r') as file:
 		lines=file.readlines()
 	return lines

@@ -12,6 +12,8 @@ def ReadLine(obj=''):
 	return input(str(obj))
 def ReadKey():
     strRead=str(charRead._Getch()())
-    return strRead[2:-1]
+    if len(strRead)>1:
+        strRead=strRead[2:-1]
+    return strRead
 def Clear():
 	os.system('cls' if os.name=='nt' else 'clear')

@@ -1,6 +1,6 @@
 import re
-from MiCodigoPython import String
-from MiCodigoPython.InternetSource import charRead
+from GabrielCatPython import String
+from GabrielCatPython.InternetSource import charRead
 import os
 
 def WriteLine(obj,*remplace):

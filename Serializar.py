@@ -1,7 +1,7 @@
 #los objetos complejos tendran un metodo para obtener un serializador los simples los obtendrán por aqui
 #el serializador tendrá dos metodos uno Serializar y otro Desserializar
-from MiCodigoPython import String
-from MiCodigoPython import Atributo
+from GabrielCatPython import String
+from GabrielCatPython import Atributo
 
 try:
 	import cpickle as pickle

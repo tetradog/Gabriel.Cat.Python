@@ -1,6 +1,6 @@
 import re
-from GabrielCatPython import String
-from GabrielCatPython.InternetSource import charRead
+import String
+from InternetSource import charRead
 import os
 
 def WriteLine(obj,*remplace):

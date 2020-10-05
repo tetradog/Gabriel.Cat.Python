@@ -3,7 +3,7 @@ import socket
 import subprocess
 import sys
 from datetime import datetime
-from GabrielCatPython import Console
+import Console
 
 class ScannedPort:
 	def __init__(self,port,isOpen):

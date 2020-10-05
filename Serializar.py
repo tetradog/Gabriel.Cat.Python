@@ -1,19 +1,19 @@
 #los objetos complejos tendran un metodo para obtener un serializador los simples los obtendrán por aqui
 #el serializador tendrá dos metodos uno Serializar y otro Desserializar
-from GabrielCatPython import String
-from GabrielCatPython import Atributo
+import String
+import Atributo
 
 try:
-	import cpickle as pickle
+    import cpickle as pickle
 except ImportError:
-	import pickle
+    import pickle
 
 class ISerializador:
-	_partes=None
-	@abstractmethod
-	def GetSerializador(self):
-		if self._partes == None:
-			self._partes={}
+    _partes=None
+    @abstractmethod
+    def GetSerializador(self):
+        if self._partes is None:
+            self._partes={}
 			for atr in Atributo.GetAttributes(self):
 				sel._partes+=Serializador.GetSerialitzer(atr.Value)
 		return Serializador(self._Serializar,self._Desserializar)
@@ -29,8 +29,8 @@ class ISerializador:
 		return objSerializado
 	
 	def _Desserializar(self,objVacio,datos):
-				atrs=Atributo.GetAttributes(obj)
-		i=0
+        atrs=Atributo.GetAttributes(objVacio)
+        i=0
 		f=len(atrs)
 		while i<f:
 			setattr(objVacio,atrs[i].Name,self._partes[i].Desserializar(atrs[i].Value,datos))
@@ -43,7 +43,7 @@ class Serializador:
 		self._set_Desserializar(args[1])
 #creo que asi van las propiedades		
 	def get_Serializar(self):
-			return self.__Serializar
+        return self.__Serializar
 	def get_Desserializar(self):
 		return self.__Desserializar
 	def _set_Serializar(self,serializar):
@@ -72,5 +72,3 @@ class Serializador:
 	@staticmethod
 	def _ToObj(objVacio,datos):#lo necesito para poderlo usar de forma generica con los objetos complejos
 		return pickle.loads(datos)
-			
-		

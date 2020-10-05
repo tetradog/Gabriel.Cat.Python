@@ -1,5 +1,5 @@
 import re
-from GabrielCatPython import Tupla
+import Tupla
 
 def Format(string,*args):
 	i=0
@@ -17,12 +17,13 @@ def Format(string,*args):
 def Split(string,*strsSplit):
 	strSplit=''
 	strsSplit=Tupla.Limpia(strsSplit)
+
 	if len(strsSplit)==0:
 		strsSplit=(';')#mejor pongo un caracter por defecto
 		#raise Exception()#se necesitan caracteres para el split
 	for s in strsSplit:
 		strSplit+=s+'|'
-	
+		
 	return re.split(strSplit[:-1],string)
 	
 def Match(string,strPatron):
@@ -39,4 +40,4 @@ def Replace(string,strOld,strNew):
 	
 def Contains(string,patron):
     return len(Replace(string,patron,''))<len(str(string))
-	
+		
